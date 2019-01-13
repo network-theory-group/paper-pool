@@ -20,13 +20,13 @@ This is a repository for storing files of various papers. Because of possible co
     + Then, upload the SSH key to GitHub, [here](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/) is a tutorial
     + If you want to use SSH to manage both of the accounts, you need do some configurations for your SSH (If you use HTTP to manage one and SSH to manage the other, then you do not need the following configurations)
         + Add the following to your `~/.ssh/conf` (if you donot have the file, then create it)
-        ```
-        Host github-ntg
-            HostName github.com
-            User git
+          ```
+          Host github-ntg
+              HostName github.com
+              User git
             IdentityFile </path/to/your/ssh-key>
-        ```
-        Note that, you need to change `</path/to/your/ssh-key>' to the location of the corresponding SSH private key, for example, `/home/saber/.ssh/ntg`. Noet also you need to create different SSH keys for different GitHub accounts and this solution can support arbitrary number of GitHub accounts.
+          ```
+          Note that, you need to change `</path/to/your/ssh-key>' to the location of the corresponding SSH private key, for example, `/home/saber/.ssh/ntg`. Noet also you need to create different SSH keys for different GitHub accounts and this solution can support arbitrary number of GitHub accounts.
     + Now you can play with both of the accounts (assuming that Host `github-ntg`)
         + Clone: `git clone git@github-ntg:network-theory-group/paper-pool.git`
         + Upload: the same as before
