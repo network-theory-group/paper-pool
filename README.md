@@ -33,3 +33,12 @@ This is a repository for storing files of various papers. Because of possible co
 
 
 
+## Potential Ideas
+
+### Application Oriented
+
++ [ ] Use EEC to assist near-duplicates detection
+    + Using `simHash` to generate a 1024 byte (or some other reasonal length) long fingerprint
+    + Using EEC to encode the fingerprint and save the encoded values into an array of bucks 
+    + For the new document to be detected, first generate its fingerprint and encoding using EEC and search agaianst the bucks
+
