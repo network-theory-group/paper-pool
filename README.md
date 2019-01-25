@@ -37,8 +37,14 @@ This is a repository for storing files of various papers. Because of possible co
 
 ### Application Oriented
 
++ [ ] String match (assuming symbol frequency non-uniform)
+    + random permutation (mapping each symbol to an integer in [N], where N is the number of different symbols)
+        + using counter for differences as a fingerprint
+        + using reverse order counter as a fingerprint
+        + building fingerprint by slicing the original string intro peaces (support approximate substring matching)
+    
 + [ ] Use EEC to assist near-duplicates detection
-    + Using `simHash` to generate a 1024 byte (or some other reasonal length) long fingerprint
+    + Using `simHash` to generate a 1024 byte (or some other reasonable length) long fingerprint
     + Using EEC to encode the fingerprint and save the encoded values into an array of bucks 
-    + For the new document to be detected, first generate its fingerprint and encoding using EEC and search agaianst the bucks
+    + For the new document to be detected, first generate its fingerprint and encoding using EEC and search against the bucks
 
